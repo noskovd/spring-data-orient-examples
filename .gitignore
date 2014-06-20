@@ -1,0 +1,37 @@
+### Eclipse ###
+.classpath
+.project
+.settings
+.sonar4clipse
+*.sonar4clipseExternals
+
+### Linux ###
+.*
+!.gitignore
+*~
+
+### Java ###
+*.class
+
+### IntelliJ ###
+*.iml
+*.ipr
+*.iws
+.idea/
+rebel.xml
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+### Build ###
+target/
+.springBeans
+/build
+build
+/bin
+bin/
+
+##Netbeans IDE
+nb-configuration.xml

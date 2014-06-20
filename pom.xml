@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.springframework.data.orient.examples</groupId>
+	<artifactId>spring-data-orient-examples-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.1.1.RELEASE</version>
+	</parent>
+	
+    <properties>
+		<spring.version>4.0.5.RELEASE</spring.version>
+		<spring.boot.version>1.1.1.RELEASE</spring.boot.version>
+        <orientdb.version>1.7.3</orientdb.version>
+        <spring.data.orient.version>0.0.3-SNAPSHOT</spring.data.orient.version>
+    </properties>
+    
+    <dependencies>
+    	<dependency>
+	        <groupId>org.springframework.data</groupId>
+	        <artifactId>spring-data-orient</artifactId>
+	        <version>${spring.data.orient.version}</version>
+		</dependency>
+    </dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<url>http://repo.spring.io/libs-milestone</url>
+		</repository>
+	</repositories>
+	<modules>
+		<module>spring-data-orient-examples-hello</module>
+	</modules>
+</project>
