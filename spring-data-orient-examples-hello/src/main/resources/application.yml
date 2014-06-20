@@ -1,0 +1,4 @@
+spring.data.orient:
+  url: local:orientdb/test1
+  username: admin
+  password: admin
